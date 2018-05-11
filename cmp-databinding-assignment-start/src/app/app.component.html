@@ -1,0 +1,13 @@
+
+<h1>Counting output</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <app-game-control (counterEvent)="receiveCounter($event)"></app-game-control>
+    </div>
+    <div class="row" *ngFor="let count of counts">
+      <app-odd-panel *ngIf="count%2 != 0" [number]="counts[count-1]"></app-odd-panel>
+      <app-even-panel *ngIf="count%2 == 0" [number]="counts[count-1]"></app-even-panel>
+    </div>
+  </div>
+</div>
