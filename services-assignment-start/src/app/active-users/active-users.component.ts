@@ -21,6 +21,5 @@ export class ActiveUsersComponent {
 
   onSetToInactive(id: number) {
     this.usersService.onSetToInactive(id);
-    this.counterServiceActive.onCount("Inactive->active count");
   }
 }

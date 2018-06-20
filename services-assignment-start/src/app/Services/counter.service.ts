@@ -9,9 +9,10 @@ export class CounterService {
 
   constructor() { }
 
-  onCount(source) {
-    this.counter++;
-    console.log(source + ": " + this.counter)
+  onCount(from,to,sourceCounter) {
+    sourceCounter++;
+    console.log(from + " -> " + to + " count: " + sourceCounter)
+    return sourceCounter
   }
 
 }
