@@ -5,8 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class CounterService {
 
-  counter:number = 0;
-
   constructor() { }
 
   onCount(from,to,sourceCounter) {
