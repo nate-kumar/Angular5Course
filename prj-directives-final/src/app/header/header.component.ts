@@ -1,4 +1,3 @@
-import { DropdownDirective } from './../dropdown.directive';
 import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
