@@ -25,9 +25,11 @@ export class ShoppingListService {
   }
 
   onIngredientsAdded(rdIngredients: Ingredient[]) {
-    rdIngredients.forEach(
-      (ingredient: Ingredient) => this.ingredients.push(ingredient)
-    );
+    // rdIngredients.forEach(
+    //   (ingredient: Ingredient) => this.ingredients.push(ingredient)
+    // );
+    this.ingredients.push(...rdIngredients);
+    this.ingredientAdded.emit(this.ingredients);
   }
 
 
